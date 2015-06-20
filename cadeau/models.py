@@ -8,6 +8,15 @@ class Artikel(models.Model):
     beschikbaar_procent = models.IntegerField(default=100, verbose_name="% nog te koop")
     totaal = models.DecimalField(decimal_places=2, max_digits=7, default=0.00)
 
+    def image_tag(self):
+        return u'<img src="%s" />' % self.foto.url
+
+    image_tag.short_description = "Foto"
+    image_tag.allow_tags = True
+
+    def __str__(self):
+        return self.naam
+
 
 class Cadeau(models.Model):
     schenker = models.CharField(max_length=1024)
