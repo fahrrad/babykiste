@@ -14,6 +14,10 @@ class Artikel(models.Model):
     image_tag.short_description = "Foto"
     image_tag.allow_tags = True
 
+    def percent(self):
+        return 100 - self.beschikbaar_procent
+    percent.short_description = "percent gegeven"
+
     def __str__(self):
         return self.naam
 

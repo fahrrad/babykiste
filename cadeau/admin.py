@@ -7,6 +7,6 @@ from cadeau.models import Artikel
 
 @register(Artikel)
 class ArtikelAdmin(admin.ModelAdmin):
-    readonly_fields = ('image_tag', )
+    readonly_fields = ('image_tag', 'percent')
 
     pass

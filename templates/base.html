@@ -8,7 +8,11 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'  %}"/>
     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
+    {% block extra-head %}
+
+    {% endblock %}
 
 </head>
 <body>
@@ -21,7 +25,9 @@
     </div>
 
     <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-        <iframe src="https://www.flickr.com/photos/55696735@N04/16747383937/in/dateposted-public/player/" width="640" height="427" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <!--<iframe src="https://www.flickr.com/photos/55696735@N04/16747383937/in/dateposted-public/player/" width="280"
+                frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen
+                msallowfullscreen></iframe> -->
 
 
     </div>
@@ -29,7 +35,10 @@
     </div>
 
 
-    <script src="{% static 'js/jquery-1.11.3.min.js' %}" />
-    <script src="{% static 'js/bootstrap.min.js'  %}" />
+    <script src="{% static 'js/jquery-1.11.3.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.min.js'  %}" ></script>
+
+    {% block end-scripts %}
+    {% endblock %}
 </body>
 </html>

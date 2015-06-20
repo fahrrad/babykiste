@@ -1,5 +1,41 @@
 {% extends "base.html" %}
 
 {% block body %}
-Hello!
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>bevestig</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="naam">naam</label>
+  <div class="col-md-4">
+  <input id="naam" name="naam" type="text" placeholder="naam" class="form-control input-md">
+  <span class="help-block">Jouw naam</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">email adres</label>
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="email" class="form-control input-md">
+  <span class="help-block">Jouw email adres</span>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ok"></label>
+  <div class="col-md-8">
+    <button id="ok" name="ok" class="btn btn-success">Bevestig</button>
+    <button id="annuleer" name="annuleer" class="btn btn-danger">Annuleer</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
 {% endblock %}

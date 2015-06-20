@@ -1,0 +1,23 @@
+.artikel {
+
+    border: 2px solid darkseagreen;
+    margin: 10px 10px 25px 50px;
+    padding: 10px 10px 25px 25px;
+}
+
+
+.artikel-foto{
+    display: inline;
+    width: 75%;
+    overflow: auto;
+}
+
+
+.artikel-beschrijving{
+    display: inline;
+    width: 24%;
+}
+
+#artikel-percent {
+    width: auto;
+}
