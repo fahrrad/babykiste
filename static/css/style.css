@@ -3,21 +3,42 @@
     border: 2px solid darkseagreen;
     margin: 10px 10px 25px 50px;
     padding: 10px 10px 25px 25px;
+
+    overflow: auto;
+    width: 100%;
 }
 
+.artikel div{
+    float:left;
+}
 
 .artikel-foto{
     display: inline;
-    width: 75%;
-    overflow: auto;
+    width: 50%;
+    height: 100%;
 }
-
 
 .artikel-beschrijving{
+    overflow: hidden;
     display: inline;
-    width: 24%;
+    width: 50%;
+    height: 80%;
+
 }
 
-#artikel-percent {
+.artikel-titel{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.artikel-prijs {
+    margin-top: 40px;
+    width: 50%;
+    text-align: right;
+    font-style: italic;
+}
+
+.artikel-percent {
+    display: none;
     width: auto;
 }

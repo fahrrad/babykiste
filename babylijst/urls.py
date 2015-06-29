@@ -17,9 +17,12 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls.static import static
+from django.core.urlresolvers import reverse
+from django.views.generic import RedirectView
 from cadeau.views import bevestig, lijst
 
 urlpatterns = [
+    url(r'^/$', RedirectView.as_view(url='/lijst'), name='root'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^bevestig/', bevestig, name="bevestig"),
     url(r'^lijst/$', lijst, name="lijst"),
